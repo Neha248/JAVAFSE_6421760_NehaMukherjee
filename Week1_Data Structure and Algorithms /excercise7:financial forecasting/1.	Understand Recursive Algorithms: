@@ -1,0 +1,5 @@
+o	Explain the concept of recursion and how it can simplify certain problems.
+Recursion is a programming technique where a fucntion calls itself to solve a problem 
+A recursive function typically has two main parts:
+Base Case – the condition that stops the recursion (prevents infinite calls).
+Recursive Case – the part where the function calls itself with a smaller or simpler input.
