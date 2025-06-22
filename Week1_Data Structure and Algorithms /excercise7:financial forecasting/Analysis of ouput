@@ -1,0 +1,6 @@
+Output Analysis
+The time complexity of my recursive algorithm is O(n).
+Because the recursive function calls itself once per year(year-1). so for n number of years , it make n recursive calls 
+
+o	Explain how to optimize the recursive solution to avoid excessive computation.
+To optimize a recursive solution and avoid excessive computation, techniques like memoization, tail recursion optimization, and converting to iterative solutions can be used.
