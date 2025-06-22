@@ -1,0 +1,14 @@
+CODE ANALYSIS
+
+There is one main class Product.class which has public constructor to initialize productId, productName, and category.
+Private member variables for encapsulation.
+Public getter methods (getproductId(), getproductName(), getcategory()) to access product details
+
+INFERENCE
+
+Time complexity of linear search algorithm = O(n)
+Time complexity of binary search algorithm = (O log n)
+
+While binary search is more efficient as compared to linear search, the former incurs the requirement of sorting the array. 
+On the other hand, linear search which takes a comparatively longer time has no such former requirement of the array being sorted.
+The choice of algorithm should depend on data size, performance needs, and whether the array can be sorted beforehand.
