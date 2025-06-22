@@ -1,0 +1,16 @@
+1.Understand Asymptotic Notation:
+Explain Big O notation and how it helps in analyzing algorithms.
+ANS:
+Big O describes the upper bound of an alogorithm's performance. It shows the worst case scnenario which is how slow it can get as input increases.
+it is useful because it helps in comparing algorithm efficiency and predicts performance on large inputs.
+
+2.Describe the best, average, and worst-case scenarios for search operations.
+ANS:
+For linear search:
+Best case O(1):item is at first position
+Average Case O(n/2)/O(n): Item is in the middle
+Worst Case O(n): Item is at the end or not found at all
+
+For binary search:
+Best Case O(1): Item is in the middle
+Average/Worst Case O(log n): Divide search space in half each time
