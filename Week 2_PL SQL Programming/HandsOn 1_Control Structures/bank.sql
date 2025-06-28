@@ -72,6 +72,9 @@ VALUES (2, 2, SYSDATE, 300, 'Withdrawal');
 
 INSERT INTO Loans (LoanID, CustomerID, LoanAmount, InterestRate, StartDate, EndDate)
 VALUES (1, 1, 5000, 5, SYSDATE, ADD_MONTHS(SYSDATE, 60));
+INSERT INTO Loans (LoanID, CustomerID, LoanAmount, InterestRate, StartDate, EndDate)
+VALUES (99, 1, 10000, 6, SYSDATE, SYSDATE + 15);
+
 
 
 // insertion into employees table
