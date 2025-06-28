@@ -1,4 +1,3 @@
-
 CREATE TABLE Customers (
     CustomerID NUMBER PRIMARY KEY,
     Name VARCHAR2(100),
@@ -85,9 +84,8 @@ INSERT INTO Employees (EmployeeID, Name, Position, Salary, Department, HireDate)
 VALUES (2, 'Bob Brown', 'Developer', 60000, 'IT', TO_DATE('2017-03-20', 'YYYY-MM-DD'));
 
 
+
 SET SERVEROUTPUT ON;
-
-
 
 //scenario 1 
 BEGIN
