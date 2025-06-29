@@ -1,14 +1,25 @@
 package com.example;
 
-import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
 
 public class CalculatorTest {
 
+    private Calculator calculator;
+
+    @Before
+    public void setup() {
+        calculator = new Calculator();
+    }
+
     @Test
     public void testAdd() {
-        Calculator calc = new Calculator();
-        int result = calc.add(2, 3);
-        assertEquals(5, result);
+        assertEquals(15, calculator.add(10, 5));
+    }
+
+    @Test
+    public void testSubtract() {
+        assertEquals(5, calculator.subtract(10, 5));
     }
 }
