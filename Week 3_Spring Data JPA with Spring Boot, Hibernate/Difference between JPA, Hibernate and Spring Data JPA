@@ -1,0 +1,14 @@
+| Feature / Aspect           | **JPA** (Java Persistence API)             | **Hibernate**                                        | **Spring Data JPA**                                     |
+| -------------------------- | ------------------------------------------ | ---------------------------------------------------- | ------------------------------------------------------- |
+| **Type**                   | Specification                              | Framework / JPA Implementation                       | Spring Framework module (Abstraction over JPA)          |
+| **Defined By**             | Java (Jakarta EE)                          | Red Hat                                              | Spring (Pivotal / VMware)                               |
+| **Purpose**                | Provides standard API for ORM              | Implements JPA and adds ORM features                 | Simplifies JPA with auto-generated code                 |
+| **Usage**                  | Defines interfaces (`EntityManager`, etc.) | Provides classes like `Session`, `Query`, `Criteria` | Uses repositories like `JpaRepository`                  |
+| **Implementation Needed?** | Yes (Hibernate, EclipseLink, etc.)         | No (It is itself an implementation)                  | Yes (Uses JPA and a provider like Hibernate)            |
+| **Boilerplate Code**       | Requires more manual code                  | Slightly reduced with templates                      | Minimal (only interfaces and annotations)               |
+| **Query Support**          | JPQL                                       | JPQL + HQL (Hibernate Query Language)                | JPQL + derived queries + `@Query`                       |
+| **Caching Support**        | No (spec defines cache but not impl.)      | Yes (1st and 2nd level caching supported)            | Inherited from underlying JPA provider (e.g. Hibernate) |
+| **Ease of Use**            | Medium                                     | Medium to High                                       | Very High                                               |
+| **Additional Features**    | None                                       | Advanced ORM features like lazy loading, caching     | Auto-implement queries, paging, sorting, auditing       |
+| **Main Interface / Class** | `EntityManager`                            | `Session`, `SessionFactory`, `Query`                 | `JpaRepository`, `CrudRepository`                       |
+| **Preferred For**          | Portability across JPA providers           | Full-featured ORM with fine control                  | Rapid development with minimal code                     |
